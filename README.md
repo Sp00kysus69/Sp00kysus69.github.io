@@ -1,2 +1,3 @@
-# Sp00kysus69.github.io
-The repository that holds my webpage
+The repository that holds my webpage basicly
+
+Brand new account cause why not lol

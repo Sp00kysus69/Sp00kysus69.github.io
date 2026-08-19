@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sp00kyStraight69</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #0e0e0e;
+    color: #ddd;
+}
+
+header {
+    text-align: center;
+    padding: 20px 20px;
+    background: #151515;
+    border-bottom: 3px solid #c8a24a;
+    flex-shrink: 0;
+}
+
+header h1 {
+    margin: 0;
+    color: #f0e8d8;
+    font-size: clamp(22px, 2.4vw, 32px);
+}
+
+main {
+    width: min(92vw, 1400px);
+    margin: 0 auto;
+    padding: 24px 20px;
+    flex: 1;
+    min-height: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 12px;
+    color: #777;
+    font-size: 13px;
+    border-top: 1px solid #222;
+    flex-shrink: 0;
+}
+
+@media (min-width: 900px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+        grid-template-areas:
+            "about video"
+            "social video";
+        column-gap: 60px;
+        row-gap: 20px;
+        align-items: stretch;
+        overflow: hidden;
+    }
+
+    main section:nth-of-type(1) { grid-area: about; overflow: hidden; }
+    main section:nth-of-type(2) { grid-area: video; display: flex; flex-direction: column; min-height: 0; justify-content: flex-start; }
+    main section:nth-of-type(3) { grid-area: social; overflow: hidden; }
+
+    main section {
+        margin-bottom: 0;
+    }
+
+    .video-wrap {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+        min-height: 0;
+        padding-top: 0;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+h2 {
+    color: #c8a24a;
+    font-size: clamp(18px, 1.4vw, 24px);
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: clamp(15px, 1vw, 17px);
+    margin: 0 0 10px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.video-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.video-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #c8a24a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.desktop-only-notice {
+    display: none;
+}
+
+@media (max-width: 899px), (pointer: coarse) and (not (any-pointer: fine)) {
+    header,
+    main,
+    footer {
+        display: none !important;
+    }
+
+    .desktop-only-notice {
+        display: flex;
+        position: fixed;
+        inset: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 24px;
+        box-sizing: border-box;
+        background: #0e0e0e;
+    }
+
+    .desktop-only-notice h1 {
+        color: #f0e8d8;
+        font-size: 22px;
+        margin: 0 0 14px 0;
+    }
+
+    .desktop-only-notice p {
+        color: #b0a898;
+        font-size: 15px;
+        line-height: 1.6;
+        max-width: 340px;
+        margin: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="desktop-only-notice">
+    <div>
+        <h1>Desktop Only</h1>
+        <p>This site is only built for laptop and desktop screens right now. Please visit on a computer.</p>
+    </div>
+</div>
+
+<header>
+    <h1>Sp00kyStraight69</h1>
+</header>
+
+<main>
+    <section>
+        <h2>About Me</h2>
+        <p>my name is Sp00kysus69 some people call me Spooky you can call me that i dont mind also 69 is in my yt handle cause i can't use Sp00ky or Sp00kysus. 
+        <p>I make FNF covers and visualizers using FL Studio cuz I don't know how to use any other software lol.</p>
+        <h2>How Long I Been Doing It</h2>
+        <p>Doing it Since 2024. I am still learning how to make covers lol and I do it whenever I got free time.</p>
+        <p>Why I am not uploading like every day is Uhh I play games and I don't have weekly schedule at all cause I have irl stuff to do.</p>
+    </section>
+
+    <section>
+        <h2>Latest Video</h2>
+        <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/wszTsKbLcM0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section>
+        <h2>Social Media</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/@Sp00kyStraight69" target="_blank">My YouTube channel</a></li>
+            <li><a href="https://x.com/Sp00kyStraight" target="_blank">My X account</a></li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+   Spongebobsquarepants
+</footer>
+</body>
+</html>

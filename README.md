@@ -1,3 +1,2 @@
-The repository that holds my webpage basicly
+The repository that holds and makes my webpage work basicly
 
-Also new account cause why not lol
